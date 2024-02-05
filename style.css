@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav1 {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.nav1>div {
+    margin-top: 5px;
+}
+
+.spacingbtn {
+    margin-left: 25px;
+    border: none;
+}
+
+.spacingbtn:hover {
+    background-color: #e4002b;
+}
+
+.nav2 {
+    background-color: #ffffff;
+    padding: 0px 100px;
+}
+
+.navbar2 {
+    padding: 8px 0px 0px 0px;
+}
+
+#bucketimg {
+    height: 40px;
+}
+
+.menu {
+    color: #000000;
+    size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.menu:hover {
+    color: #e4002b;
+    size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+
+#order {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#order>div>div>p {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.orderbtn {
+    background-color: #e4002b;
+    margin-top: 2px;
+    margin-left: 25px;
+    border: none;
+    font-weight: 500;
+}
+
+h1 {
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+h2 {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.gridgap {
+    row-gap: 10px;
+}
+
+
+.offerbar {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.offerdisplay {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.img-fluid {
+    padding: 2px;
+}
+
+.redeembtn {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.redeembtn:hover {
+    background-color: #000000;
+}
+
+.full-footer {
+    background-color: #202124;
+    width: 100%;
+
+}
+
+.top-footer h3 {
+    color: #ffffff;
+}
+
+.top-footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.top-footer a:hover {
+    color: blue;
+}
+
+.bottom-footer {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom-footer p,
+i {
+    margin: 0px;
+    color: #ffffff;
+}
+
+/* MediaQueries */

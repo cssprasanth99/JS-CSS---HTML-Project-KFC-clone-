@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC Menu Prices</title>
+    <link rel="icon" href="https://www.freepnglogos.com/uploads/kfc-png-logo/worldfest-kfc-png-logo-6.png"
+        type="image./x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="d-flex justify-content-center nav1">
+            <div>
+                <i class="bi bi-geo-alt-fill" style="color: red;"></i>
+                <p style="display: inline;">Allow location access for local store</p>
+            </div>
+            <button type="button" class="btn btn-dark spacingbtn">Set Location</button>
+        </div>
+        <!-- navbar starting -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar2">
+            <div class="container-fluid nav2">
+                <a class="navbar-brand" href="index.html"><img
+                        src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link menu active" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu" href="deals.html">Deals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu" href="aboutus.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu" href="findkfc.html">Find A KFC</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-person-circle"></i></a>
+                        </li>
+                        <li class="nav-item menu">
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-primary"
+                                    style="background-color: #e4002b; border: 0;"><a href="login.html"
+                                        style="color: aliceblue; text-decoration: none;">Login</a></button>
+                                <button type="button" class="btn btn-primary"
+                                    style="background-color: #e4002b; border: 0;"><a href="signup.html"
+                                        style="color: aliceblue; text-decoration: none;">Sign
+                                        Up</a></button>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">$0</a>
+                        </li>
+                        <li class="nav-item menu">
+                            <a class="navbar-brand" href="cart.html"><img
+                                    src="https://axiomatic-trouble-8860-38bfe.web.app/cart.svg" alt="logo"
+                                    id="bucketimg"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar ending -->
+        <!-- menu starting -->
+        <div class="row menu-details">
+            <div class="col-4">
+                <div id="list-example" class="list-group">
+                    <h3 class="menu-heading">MENU</h3>
+                    <a class="list-group-item list-group-item-action navlink" href="#Chicken Buckets">Chicken
+                        Buckets</a>
+                    <a class="list-group-item list-group-item-action navlink" href="#New Launch">New Launch</a>
+                    <a class="list-group-item list-group-item-action navlink" href="#Biryani Buckets">Biryani
+                        Buckets</a>
+                    <a class="list-group-item list-group-item-action navlink" href="#Box Meals">Box Meals</a>
+                </div>
+            </div>
+            <div class="col-8">
+                <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+                    class="scrollspy-example menu-body" tabindex="0">
+                    <!-- search bar starting -->
+                    <nav class="navbar navbar-light bg-light searchnav">
+                        <form class="form-inline searchbtn">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        </form>
+                    </nav>
+                    <!-- search bar ending -->
+                    <h4 id="Chicken Buckets">Chicken Buckets</h4>
+                    <div class="container text-center">
+                        <div class="row row-cols-lg-3 row-cols-md-2 gridgap-menu">
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title name">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b class="price">₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1
+                                        Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <button type="button" class="btn btn-danger" id="pro1">Add to
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000892.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bucket for Two</h5>
+                                        <p class="card-text">
+                                        <p><b>₹599</b></p>Flat Rs. 115 off on combo of 2pc Hot & Crispy, 2 pc Smoky Red
+                                        Chicken</p>
+                                        <button type="button" class="btn btn-danger" id="pro2">Add to
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-K512.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">10pc Leg Piece Bucket & 4 Dips
+                                        </h5>
+                                        <p class="card-text">
+                                        <p><b>₹899</b></p>Leg before any wicket! Save 29% on 10 Leg Pieces & 4 Dips
+                                        [serves 3-4]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 id="New Launch">New Launch</h4>
+                    <div class="container text-center">
+                        <div class="row row-cols-lg-3 row-cols-md-2 gridgap-menu">
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 id="Biryani Buckets">Biryani Buckets</h4>
+                    <div class="container text-center">
+                        <div class="row row-cols-lg-3 row-cols-md-2 gridgap-menu">
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 id="Box Meals">Box Meals</h4>
+                    <div class="container text-center">
+                        <div class="row row-cols-lg-3 row-cols-md-2 gridgap-menu">
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/lg/D-PR00000920.jpg?ver=1.10"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5pc Leg Piece Bucket Meal</h5>
+                                        <p class="card-text">
+                                        <p><b>₹619</b></p>Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a
+                                        Pepsi
+                                        PET [serves 2 ]</p>
+                                        <a href="#" class="btn btn-primary cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer starting -->
+        <footer class="full-footer p-md-3 p-1">
+            <div class="container top-footer">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>Company</h3>
+                        <a href="aboutus.html">About Us</a><br>
+                        <a href="aboutus.html">Blog</a><br>
+                        <a href="aboutus.html">Careers</a><br>
+                        <a href="aboutus.html">Contact Us</a><br>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Support</h3>
+                        <a href="#">Help Center</a><br>
+                        <a href="#">safety Center</a><br>
+                        <a href="#">Community Guidelines</a><br>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Legal</h3>
+                        <a href="#">Cookies Policy</a><br>
+                        <a href="#">Terms of Service</a><br>
+                        <a href="#">Law of Enforcement</a><br>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Install App</h3>
+                        <a href="https://apps.apple.com/in/app/kfc-india-online-ordering-app/id915824379"
+                            target="_blank"><img class="img-fluid"
+                                src="https://images.ctfassets.net/wtodlh47qxpt/em3mcMuAdXWlgucSJiTbS/d3ae7e51ed101d829e459355e255c47f/apple.svg"
+                                alt="no img"></a><br>
+                        <a href="https://play.google.com/store/apps/details?id=com.yum.kfc&hl=en_IN&gl=US"
+                            target="_blank"><img class="img-fluid"
+                                src="https://images.ctfassets.net/wtodlh47qxpt/6BdZsyjLn64c06uCIE73d1/fb530f5d5231533b049463f6c7e8a2b1/google_play.svg"
+                                alt=""></a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer pt-3">
+                <div>
+                    <p>Copyright © KFC Corporation 2021 All Rights Reserved</p>
+                </div>
+                <div>
+                    <a href="https://twitter.com/KFC_India?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i
+                            class="bi bi-twitter" target="_blank"></i></a>
+                    <a href="https://www.instagram.com/kfcindia_official/?hl=en"><i class="bi bi-instagram"
+                            target="_blank"></i></a>
+                    <a href="https://www.youtube.com/channel/UCg5ukNutGtg1KqvWwuc56xw"><i class="bi bi-youtube"
+                            target="_blank"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- footer ending -->
+    <script src="./script_menu.js"></script>
+    <script src="./logout.js"></script>
+</body>
+
+</html>
